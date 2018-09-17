@@ -40,7 +40,7 @@ export default class Settings extends Component {
   render() {
     return (
       <div className="Settings">
-        <StripeProvider aoiKey={config.STRIPE_KEY}>
+        <StripeProvider apiKey={config.stripeKey}>
           <Elements>
             <BillingForm loading={this.state.isLoading} onSubmit={this.handleFormSubmit} />
           </Elements>

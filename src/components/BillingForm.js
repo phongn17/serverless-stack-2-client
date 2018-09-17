@@ -28,7 +28,7 @@ class BillingForm extends Component {
     this.setState({ isCardComplete: event.complete });
   }
 
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault();
 
     const { name } = this.state;
